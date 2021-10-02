@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #292929;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background: #28e9c3;
+    box-shadow: 0 0 10px #000000;
+}
+.fadeIn{
+    animation: fadeIn 1s both;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: perspective(10px) translate3d(0, 0, -100px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInUp{
+    animation: fadeInUp 1s both;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInDown{
+    animation: fadeInDown 1s both;
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInLeft{
+    animation: fadeInLeft 1s both;
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInRight{
+    animation: fadeInRight 1s both;
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeOut{
+    animation: fadeOut 1s both;
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+        transform: none;
+    }
+    100%{
+        opacity: 0;
+        transform: perspective(100px) translate3d(0, 0, -100px);
+    }
+}
+.fadeOutUp{
+    animation: fadeOutUp 1s both;
+}
+@keyframes fadeOutUp{
+    0%{
+        opacity: 1;
+        transform: none;
+    }
+    100%{
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+.fadeOutDown{
+    animation: fadeOutDown 1s both;
+}
+@keyframes fadeOutDown{
+    0%{
+        opacity: 1;
+        transform: none;
+    }
+    100%{
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+.fadeOutLeft{
+    animation: fadeOutLeft 1s both;
+}
+@keyframes fadeOutLeft{
+    0%{
+        opacity: 1;
+        transform: none;
+    }
+    100%{
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+.fadeOutRight{
+    animation: fadeOutRight 1s both;
+}
+@keyframes fadeOutRight{
+    0%{
+        opacity: 1;
+        transform: none;
+    }
+    100%{
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+}
